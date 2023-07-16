@@ -1,0 +1,57 @@
+@import url('normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background-color: #302d39;
+    --sidebar-bg: #231b2e;
+    --alpha-bg: hsla(0, 0%, 100%, 0.1);
+    --border-primary: hsla(0, 0%, 100%, 0.1);
+    --purple-primary: #9b4de0;
+    --white: #fff;
+    --layout-bg: #170f23;
+    --text-placeholder: #dadada;
+    --search-text: #eee;
+    --primary-bg: #34224f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed optimizeLegibility;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    word-break: normal;
+}

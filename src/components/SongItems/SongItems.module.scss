@@ -1,0 +1,57 @@
+.media-song {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 8px 10px;
+    border-radius: 4px;
+    max-height: calc(100vh - 180px);
+    z-index: 5;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--alpha-bg);
+    }
+}
+
+.song-img {
+    width: 52px;
+    height: 52px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.song-infor {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.song-name {
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    &:hover {
+        color: var(--purple-primary);
+    }
+}
+
+.singer-name {
+    font-size: 1.2rem;
+    color: #ffffff80;
+}
+
+.options {
+    margin-left: 10px;
+}
+
+.heart-icon,
+.more-icon {
+    border-radius: 999px;
+    padding: 6px;
+    margin: 0 4px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--alpha-bg);
+    }
+}

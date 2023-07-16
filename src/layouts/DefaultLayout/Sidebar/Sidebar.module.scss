@@ -1,0 +1,137 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    background-color: var(--sidebar-bg);
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    z-index: 100;
+}
+
+.logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px 0 28px;
+
+    img {
+        width: 120px;
+        height: 40px;
+    }
+}
+
+.wrapper_navlink {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+    font-size: 1.4rem;
+
+    &:first-child::before {
+        content: '';
+        position: absolute;
+        left: 25px;
+        right: 25px;
+        bottom: 0;
+        border: 1px solid var(--border-primary);
+        width: 190px;
+    }
+
+    &:nth-child(2) {
+        margin-top: 12px;
+    }
+}
+
+.navlink-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 21px;
+    cursor: pointer;
+
+    &.active {
+        position: relative;
+        background-color: var(--alpha-bg);
+        color: var(--white);
+    }
+
+    &.active::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        border: 2px solid #9b4de0;
+        height: 44px;
+    }
+
+    &:not(.active):hover {
+        color: var(--white);
+    }
+
+    span {
+        margin-left: 12px;
+    }
+}
+
+.wrapper_login-nav {
+    padding: 15px 8px;
+    border-radius: 8px;
+    margin: 10px 20px;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--purple-primary);
+
+    span {
+        display: block;
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 0 0 10px;
+        font-weight: 700;
+    }
+
+    button {
+        font-size: 1.4rem;
+        border-color: var(--white);
+        color: inherit;
+        padding: 6px 35px;
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        margin: 0 auto;
+        border: 1px solid var(--white);
+        border-radius: 999px;
+
+        &:hover {
+            cursor: pointer;
+            color: #ccc;
+            opacity: 0.8;
+        }
+    }
+}
+
+.add_playlist {
+    color: #ccc;
+    background-color: transparent;
+    height: 54px;
+    padding: 24px;
+    border-top: 1px solid var(--border-primary);
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    span {
+        margin-left: 12px;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
