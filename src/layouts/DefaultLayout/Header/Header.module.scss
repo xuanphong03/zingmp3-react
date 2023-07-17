@@ -8,9 +8,66 @@
     color: #fff;
     display: flex;
     align-items: center;
-    padding: 0 59px;
+    justify-content: space-between;
+    padding: 0 var(--padding-section);
+
+    .wrapper {
+        display: flex;
+
+        .download-btn {
+            margin-right: 8px;
+            padding: 10px 24px;
+            font-weight: 600;
+            font-size: 1.4rem;
+            background-color: var(--alpha-bg);
+            overflow: hidden;
+            color: var(--purple-primary);
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .setting-btn {
+            margin-right: 8px;
+        }
+
+        .download-btn,
+        .setting-btn,
+        .account-btn {
+            border-radius: 999px;
+        }
+
+        .setting-btn,
+        .account-btn img {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--alpha-bg);
+            border-radius: 999px;
+        }
+
+        .account-btn {
+            cursor: pointer;
+        }
+    }
 }
 
 .level {
     display: flex;
+    align-items: center;
+
+    .level-left,
+    .level-right {
+        width: 44px;
+        font-size: 2.2rem;
+    }
+}
+
+.wrapper-login-btn {
+    overflow: hidden;
+    border-radius: 8px;
+    width: 350px;
 }

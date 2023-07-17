@@ -91,28 +91,6 @@
         margin: 0 0 10px;
         font-weight: 700;
     }
-
-    button {
-        font-size: 1.4rem;
-        border-color: var(--white);
-        color: inherit;
-        padding: 6px 35px;
-        font-size: 12px;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        margin: 0 auto;
-        border: 1px solid var(--white);
-        border-radius: 999px;
-
-        &:hover {
-            cursor: pointer;
-            color: #ccc;
-            opacity: 0.8;
-        }
-    }
 }
 
 .add_playlist {

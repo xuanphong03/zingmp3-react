@@ -1,0 +1,35 @@
+.wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+
+    .menu-item {
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        padding: 12px 10px;
+        height: 44px;
+
+        .menu-icon {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+
+        .menu-title {
+            flex: 1;
+        }
+    }
+
+    .menu-item:nth-child(2) {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-item:hover {
+        border-radius: 4px;
+        background-color: var((--alpha-bg));
+    }
+}

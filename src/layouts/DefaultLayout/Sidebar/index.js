@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Sidebar.module.scss';
-
+import Button from '~/components/Button';
 import { NavLink } from 'react-router-dom';
 import {
     DiscMusicIcon,
@@ -99,7 +99,13 @@ function Sidebar() {
                         })}
                         <div className={cx('wrapper_login-nav')}>
                             <span className={cx('login-title')}>Đăng nhập để khám phá playlist dành riêng cho bạn</span>
-                            <button className={cx('login-btn')}>ĐĂNG NHẬP</button>
+                            <Button
+                                small={true}
+                                href="https://id.zalo.me/account?continue=https%3A%2F%2Fzingmp3.vn%2Falbum%2FK-Pop-Daebak-SEVENTEEN-aespa-Stray-Kids-EXO%2FZOCCU87Z.html%3FisZaloPopupLogin%3D1"
+                                className={cx('login-btn')}
+                            >
+                                ĐĂNG NHẬP
+                            </Button>
                         </div>
                     </div>
                 </div>
